@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+
+ #home{
+     color:yellow;
+    font-weight:bold;
+       }
+    header#home nav .menu a{
+    color: yellow;
+}
+
+body{
+    background: rgb(97, 97, 246);
+}
+ 
+#short-text{
+    color: white;
+    font-weight:bold;
+}
+.intro{ 
+    background-color: aliceblue;
+    color:rgb(224, 212, 111);
+    font-weight: bold;
+}
+#aboutus{
+    color:whitesmoke;
+    font-weight: bold;
+}
+.what-we-do p {
+    color:whitesmoke;
+}
+.what-we-do img {
+    border-radius: 50%;
+}
+.team{
+    background: white;
+    margin: -7px;
+}
+.offered-services{
+    background: white;
+    margin: -7px;
+}
+#pricing{
+    color: white;
+    font-weight:bold;
+}
+#pricing>p>{
+    color: white;
+    }
+.button-book{
+    background-color:white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
