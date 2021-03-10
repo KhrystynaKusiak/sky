@@ -1,54 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
-
-
- #home{
-     color:yellow;
-    font-weight:bold;
-       }
-    header#home nav .menu a{
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap'); #home {
     color: yellow;
+    font-weight: bold;
 }
 
-body{
+h1 {
+    color: yellow;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+header#home nav .menu a {
+    color: yellow;
+    display: flex;
+}
+
+body {
     background: rgb(97, 97, 246);
 }
- 
-#short-text{
+
+#short-text {
     color: white;
-    font-weight:bold;
+    font-weight: bold;
 }
-.intro{ 
+
+.intro {
     background-color: aliceblue;
-    color:rgb(224, 212, 111);
+    color: rgb(224, 212, 111);
     font-weight: bold;
 }
-#aboutus{
-    color:whitesmoke;
+
+#aboutus {
+    color: whitesmoke;
     font-weight: bold;
 }
+
 .what-we-do p {
-    color:whitesmoke;
+    color: whitesmoke;
 }
+
 .what-we-do img {
     border-radius: 50%;
 }
-.team{
+
+.team {
     background: white;
     margin: -7px;
 }
-.offered-services{
+
+.offered-services {
     background: white;
-    margin: -7px;
+    margin: -8px;
 }
-#pricing{
+
+#pricing {
     color: white;
-    font-weight:bold;
+    font-weight: bold;
 }
-#pricing>p>{
+
+#pricing>p> {
     color: white;
-    }
-.button-book{
-    background-color:white;
+}
+
+.button-book {
+    background-color: white;
     border: none;
     color: black;
     padding: 15px 32px;
@@ -56,4 +70,22 @@ body{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+#list-of-servises a {
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px
+}
+
+#list-of-servises article {
+    margin: 10px 20px 10px 20px;
+    background-color: white;
+    width: 200px;
+    height: 400px;
 }
