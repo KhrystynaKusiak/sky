@@ -19,9 +19,17 @@
     }
 .logo {
     display: flex;
-    margin: 30px 80px;
-   
-   
+    margin: 30px 50px;
+      
+}
+.burger-icon{
+    font-size: 2em;
+}
+.burger-icon:hover{
+    cursor: context-menu;
+}
+#burger-checkbox{
+    display: none;
 }
 .social-media{
     display: flex;
@@ -33,11 +41,16 @@
 header .menu{
     list-style-type: none;
     font-weight: bold;
+    display: none;
+    flex-direction: column;
+}
+header input:checked ~ .menu{
+    display: flex;
 }
 header .menu a{
     text-decoration: none;
     color: var(--main-color);
-    
+       
 }
 
 @media (min-width:610px) {
@@ -110,9 +123,50 @@ h1 {
     text-decoration: underline;
 }
 
-@media (min-width:980px){
-.intro{
-    grid-template-columns: 1fr 1fr 1fr;
+
+.intro {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+   border: none;
+   justify-items: stretch;
 
 }
+.intro-item-title{
+    margin: 50px 50px 10px 10px;
+    display: flex;
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.intro-text{display: flex;
+     margin: 10px 50px 50px 10px;
+  
+    font-weight: bold;
+    color: var(--article-color)
+
+}
+.what-we-do {
+    background-image: url(../images/about-us-backgraund.png);
+    background-size: cover;
+    min-height: 600px;
+text-align: center;
+  }
+  #aboutus{
+    
+      color: var(--accent-color);
+      font-weight: bold;
+      font-size: 50px;
+      padding-top: 120px;
+  }
+.what-we-do img{
+    border-radius: 50%;
+}
+.what-we-do h3{
+    color: var(--accent-color);
+      font-weight: bold;
+}
+.what-we-do p{
+    color: var(--accent-color);
+
 }
