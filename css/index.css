@@ -1,139 +1,118 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Noto+Sans&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 
 :root{
-    font-family: Merriweather;
-    --main-color: rgb(221, 200, 15);
+    font-family: 'Hind', sans-serif;
+    --main-color: #FFD600;
     --accent-color: white;
     --article-color: rgba(128, 128, 128, 0.932);
     scroll-behavior: smooth;
    }
+
+   body {
+       max-width: 980px;
+    margin: auto;
+    }
 .logo {
     display: flex;
-    position: fixed;
-    padding: 0px 50px 50px 0px;
+    margin: 30px 80px;
+   
+   
+}
+.social-media{
+    display: flex;
+    margin: 40px 0px 50px 20px;
+    align-items: center;
+    flex-direction: row;
+
+}
+header .menu{
+    list-style-type: none;
+    font-weight: bold;
+}
+header .menu a{
+    text-decoration: none;
+    color: var(--main-color);
+    
 }
 
-
-@media (min-width:480px) {
+@media (min-width:610px) {
+    header nav{
+        display: flex;
+    }
+    header .burger-icon{
+        display: none;
+    }
     header .menu{
-    
+        padding-left: 50px ;
+        margin: 40px 100px 50px 130px;
         display: flex;
         justify-content: space-around;
-        flex: 1;     
+        flex: 1;   
+        align-items: center;
         flex-direction: row;
         list-style-type: none;
     }
-    header nav{
-        display:flex;
-    }
+    
 }
-
-
 header {
-    background-image: url(../images/back.jpeg);
+    background-image: url(../images/main-cover.png);
     background-size: cover;
-
-    min-height: 500px;
-    }
+    min-height: 600px;
+}
+  
 
 h1 {
-    color: yellow;
+    display: flex;
+    font-family: 'Hind', sans-serif;
     font-weight: bold;
-    font-size: 80px;
-    margin: 80px 20px 20px 5px;
-    justify-content: space-around;
-}
-
-header#home nav .menu a {
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 50px;
+    margin: 80px 20px 20px 40px;
+    justify-content: left;
+    text-align: left;
     
-    color: yellow;
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 25px;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    justify-content: space-around;
 }
-
-
-body {max-width: 980px;
-    margin: auto;
-    }
-
-#short-text {
-    color: white;
+#short-text{
+    display: flex;
+    font-family: 'Hind', sans-serif;
+    color: var(--accent-color);
     font-weight: bold;
+    margin: 20px 20px 40px 40px;
 }
-
-.intro {
-    background-color: aliceblue;
-    color: rgb(224, 212, 111);
-    font-weight: bold;
-}
-
-#aboutus {
-    color: whitesmoke;
-    font-weight: bold;
-}
-
-.what-we-do p {
-    color: whitesmoke;
-}
-
-.what-we-do img {
-    border-radius: 50%;
-}
-
-.team {
-    background: white;
-    margin: -7px;
-}
-
-.offered-services {
-    background: white;
-    margin: -8px;
-}
-
-#pricing {
-    color: white;
-    font-weight: bold;
-}
-
-#pricing>p> {
-    color: white;
-}
-
-.button-book {
-    background-color: white;
-    border: none;
-    color: black;
-    padding: 15px 32px;
+.button-book a{
+    background-color:#FFFFFF;
+    padding: 14px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
+    margin: 100px 10px 5px 40px;
+    font-weight: bold;
+    text-decoration:none;
 
-#list-of-servises a {
-    background-color: yellow;
-    border: none;
-    color: black;
-    padding: 15px 32px;
+}
+.button-book #linkvideo{
+    background-color:transparent;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px
+    margin: 100px 10px 10px 5px;
+    font-weight: bold;
+    color: var(--accent-color);
+
 }
 
-#list-of-servises article {
-    margin: 10px 20px 10px 20px;
-    background-color: white;
-    width: 200px;
-    height: 400px;
+.button-book #linkvideo:hover {
+    color: var(--main-color);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (min-width:980px){
+.intro{
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
 }
