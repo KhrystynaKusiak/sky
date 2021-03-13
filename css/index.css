@@ -12,7 +12,7 @@
 }
 
 body {
-    max-width: 980px;
+    max-width: 960px;
     margin: auto;
 }
 
@@ -42,6 +42,10 @@ header .menu {
     font-weight: bold;
     display: none;
     flex-direction: column;
+}
+header .menu a:hover {
+    text-decoration: underline;
+    
 }
 
 header input:checked ~ .menu {
@@ -147,18 +151,39 @@ h1 {
     color: var(--article-color);
 }
 
-.what-we-do {
+.second-block {
     background-image: url(../images/about-us-backgraund.png);
     background-size: cover;
     min-height: 600px;
+    padding-top: 200px;
+    
+}
+h2 {
+    padding: 20px;
+    font-size: 50px;
+    justify-content: center;
+    display: flex;
     text-align: center;
+ 
+    color: var(--accent-color);
+}
+p {
+   
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: 5px 50px 20px 50px;
+    color: var(--accent-color);
 }
 
-#aboutus {
+
+.aboutus {
     color: var(--accent-color);
     font-weight: bold;
-    font-size: 50px;
-    padding-top: 120px;
+    display:flex;
+    justify-content: center;
+    
 }
 
 .what-we-do img {
@@ -176,10 +201,16 @@ h1 {
 
 .what-we-do {
     display: flex;
-    flex-direction: column;
-    justify-items: stretch;
+    justify-content: space-around;
+    
+    flex-direction: row;
+    align-items: flex-end;
 }
 
 .what-we-do img {
     width: 60px;
+}
+.discription-free-fly img{
+    justify-content: flex-start;
+    text-align: left;
 }
