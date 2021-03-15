@@ -97,12 +97,13 @@ h1 {
     text-align: left;
 }
 
-#short-text {
+#short-text p{
     display: flex;
+    justify-content: left;
     font-family: 'Hind', sans-serif;
     color: var(--accent-color);
     font-weight: bold;
-    margin: 20px 20px 40px 40px;
+    margin: 20px 20px 40px 10px;
 }
 
 .button-book a {
