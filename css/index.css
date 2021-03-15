@@ -143,7 +143,13 @@ h1 {
     font-weight: bold;
     color: var(--main-color);
 }
-
+#short-text p {
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    margin: 5px 50px 20px 50px;
+    color: var(--accent-color);
+}
 .intro-text {
     display: flex;
     margin: 10px 50px 50px 10px;
@@ -151,31 +157,31 @@ h1 {
     color: var(--article-color);
 }
 
-.second-block {
-    background-image: url(../images/about-us-backgraund.png);
+.second-block, .fourth-block{
+    background-image: url(../images/background-block.png);
     background-size: cover;
     min-height: 600px;
-    padding-top: 200px;
+    
     
 }
 h2 {
-    padding: 20px;
+    padding: 40px;
     font-size: 50px;
     justify-content: center;
     display: flex;
     text-align: center;
- 
-    color: var(--accent-color);
+     color: var(--accent-color);
 }
-p {
-   
-    padding: 20px;
-    justify-content: center;
+p{
+    padding:5px 100px 20px 100px;
+    font-size: 20px;
     display: flex;
+    justify-content: center;
+    text-align: center;
     
-    margin: 5px 50px 20px 50px;
-    color: var(--accent-color);
+    color:var(--accent-color)
 }
+
 .what-we-do{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -196,14 +202,114 @@ p {
 }
 /*end class second block*/
 
-.team-intro h2{
+.team-intro h2, .offered-services h2, .video h2{
     color: var(--article-color);
+    font-size: 40px;
+    padding-top: 50px;
 }
-.team-intro p{
+.team-intro p, .offered-services p, .video p{
     color: var(--article-color);
-}
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+   }
+/*чому не сприймає justify-content:center для offered-services*/
 .our-instructors{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
+.team-intro article, h3{
+    display:flex;
+    justify-content: center;
+    
+}
+.our-instructors p{
+    color: var(--article-color);
+    font-family: 'Hind', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding-top: 15px;
+}
+.social-media-contact-instuctors{
+    
+    display: flex;
+    justify-content: center;
+    text-decoration:none;
+    font-size: 10px;
+ }
 
+.discription-of-services{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+        
+}
+.discription-of-services img{
+    font-weight: 100;
+    
+}
+#list-of-services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+    padding: 15px;
+           
+}
+.services{
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+
+
+#list-of-services p{
+    color: var(--article-color);
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding: 5px;
+}
+#list-of-services .price{
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: bold;
+}
+#list-of-services .services a {
+    display: flex;
+    background-color:var(--main-color);
+    padding: 5px;
+    margin:20px 80px 20px 100px;
+    transition:color 0.7s;
+    justify-content: end;
+    
+    text-decoration: none;
+}
+#list-of-services .services img{
+    font-size: 40px;
+    margin:20px 60px 20px 70px;
+
+}
+.fifth-block{
+    background-image: url(../images/background-reguest-form.png);
+    background-size: cover;
+    min-height: 600px;
+}
+.font-request-form img{
+    display: flex;
+    justify-content: right;
+    padding-top: 200px;
+    font-size: 50px;
+    
+}
+.request-form, #ordering h2 {
+    display: flex;
+    justify-content: left;
+}
+.video{
+    background-image: url(../images/video-background.png);
+    background-size: cover;
+    min-height: 600px;
+}
+iframe{
+padding: 50px;
+}
