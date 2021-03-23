@@ -174,7 +174,7 @@ h2 {
      color: var(--accent-color);
 }
 p{
-    padding:5px 100px 20px 100px;
+    padding:5px 10px 20px 0px;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -185,21 +185,29 @@ p{
 
 .what-we-do{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6,6em 12em );
+    padding: 30px 10px 30px 10px ;
 }
 .what-we-do img{
     border-radius: 50%;
-    justify-items: left;
+   
+}
+.free-fly-img, .emotions-img, .touching-img{
+    padding: 5px 5px 20px 5px;
+    font-size: 15px;
+    display: flex;
 }
 .what-we-do h3{
     color: var(--accent-color);
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
 
 }
 .what-we-do p{
-    justify-content: left;
+    justify-content: space-around;
+    font-size: 12px;
+    padding: 5px 10px 20px 5px;
 }
 /*end class second block*/
 
@@ -208,13 +216,17 @@ p{
     font-size: 40px;
     padding-top: 50px;
 }
-.team-intro p, .offered-services p, .video p{
+.our-instructors h3, .services h3{
+    padding-top: 20px;
+    font-family: 'Hind', sans-serif;
+}
+.team-intro p, .offered-services p, .services p, .video p{
     color: var(--article-color);
     display: flex;
     justify-content: center;
     font-size: 20px;
    }
-/*чому не сприймає justify-content:center для offered-services*/
+
 .our-instructors{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -230,7 +242,7 @@ p{
     display: flex;
     justify-content: space-between;
     font-size: 15px;
-    padding-top: 15px;
+    padding: 5px 10px 5px 10px;
 }
 .social-media-contact-instuctors{
     
@@ -249,47 +261,49 @@ p{
     font-weight: 100;
     
 }
-#list-of-services{
+#list-of-services {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 15px;
-    padding: 15px;
+    padding: 25px;
+    padding-block-end: 100px;
+    
            
 }
 .services{
     background-color: #FFFFFF;
-    padding: 10px;
+   
+    
 }
 
 
 
-#list-of-services p{
+#list-of-services  p{
     color: var(--article-color);
     display: flex;
     justify-content: center;
     font-size: 15px;
-    padding: 5px;
+    padding: 0px;
+    margin-bottom: px;
 }
 #list-of-services .price{
     color: var(--main-color);
     font-size: 30px;
     font-weight: bold;
 }
-#list-of-services .services a {
-    display: flex;
-    background-color:var(--main-color);
-    padding: 5px;
-    margin:20px 80px 20px 100px;
-    transition:color 0.7s;
-    justify-content: end;
-    
-    text-decoration: none;
-}
 #list-of-services .services img{
-    font-size: 40px;
-    margin:20px 60px 20px 70px;
-
+    display: block;
+    
+    margin: 5px 50px 5px 50px;
+    width: 20%;
 }
+    
+ .services a{
+     align-items: flex-end;
+     text-align: center;
+ }   
+
+
 .fifth-block{
     background-image: url(../images/background-reguest-form.png);
     background-size: cover;
@@ -299,7 +313,7 @@ p{
     display: flex;
     justify-content: right;
     padding-top: 200px;
-    font-size: 50px;
+    font-size: 80px;
     
 }
 .request-form, #ordering h2 {
