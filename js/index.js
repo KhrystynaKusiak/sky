@@ -28,7 +28,7 @@ function updateTime(){
    let currentIdx = 0;
 
 function showCurrentImage() {
-    const imagesTOShow=2;
+    
     const imgContainer1 = document.querySelector('.services .image-first');
     const imgContainer2 = document.querySelector('.services .image-second');
     const imgContainer3 = document.querySelector('.services .image-thirth');
@@ -58,8 +58,8 @@ showCurrentImage();
 
 setInterval(next, 2000);
 
-document.querySelector('carousel-discription-of-services .next')
+document.querySelector('.carousel-discription-of-services .next')
   .addEventListener('click', next);
 
-document.querySelector('carousel-discription-of-services .prev')
+document.querySelector('.carousel-discription-of-services .prev')
   .addEventListener('click', prev);
