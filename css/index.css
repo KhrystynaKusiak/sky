@@ -16,7 +16,7 @@ body {
     margin: auto;
 }
 
-.logo {
+.logo{
     display: flex;
     margin: 30px 50px;
 }
@@ -82,6 +82,12 @@ header {
     background-image: url(../images/main-cover.png);
     background-size: cover;
     min-height: 600px;
+}
+header.time{
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: bold;
+    margin: 20px 10px 50px 50px;
 }
 
 h1 {
@@ -251,16 +257,45 @@ p{
     text-decoration:none;
     font-size: 10px;
  }
+.services {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    max-width: 960px;
+}
 
-.discription-of-services{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-        
+.services img {
+    width: 25%;
+    padding: 10px 5px 10px 5px;
 }
-.discription-of-services img{
-    font-weight: 100;
-    
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+
 #list-of-services {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -269,11 +304,6 @@ p{
     padding-block-end: 100px;
     
            
-}
-.services{
-    background-color: #FFFFFF;
-   
-    
 }
 
 
