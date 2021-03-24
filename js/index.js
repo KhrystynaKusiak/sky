@@ -1,5 +1,3 @@
-
-
 setInterval(updateTime,1000);
 function updateTime(){
     const timeContainer=document.querySelector('.time');
@@ -63,3 +61,5 @@ document.querySelector('.carousel-discription-of-services .next')
 
 document.querySelector('.carousel-discription-of-services .prev')
   .addEventListener('click', prev);
+
+
