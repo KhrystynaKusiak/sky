@@ -1,7 +1,7 @@
 setInterval(updateTime,1000);
 function updateTime(){
     const timeContainer=document.querySelector('.time');
-    timeContainer.innerText=new Date().toLocaleTimeString();
+    timeContainer.innerText=new Date().toLocaleString();
 }
 
 //const dateContainer=document.querySelector('.date');
