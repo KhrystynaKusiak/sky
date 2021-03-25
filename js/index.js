@@ -4,18 +4,7 @@ function updateTime(){
     timeContainer.innerText=new Date().toLocaleString();
 }
 
-//const dateContainer=document.querySelector('.date');
-//function formatDate(){
-    
-    //let today=new Date();
-    //let date= today.getDate();
-   // let month=today.getMonth();
-   // let year=today.getFullYear();
-    //let currentDate=`${date}/${month}/${year}`
-    
-    //dateContainer.innerText=currentDate;
-   //}
- 
+
    const carouselImages=[
        'images/slider-fre-fly.jpg',
        'images/slider-kitesurfing.jpg',
@@ -27,10 +16,10 @@ function updateTime(){
 
 function showCurrentImage() {
     
-    const imgContainer1 = document.querySelector('.services .image-first');
-    const imgContainer2 = document.querySelector('.services .image-second');
-    const imgContainer3 = document.querySelector('.services .image-thirth');
-    const imgContainer4 = document.querySelector('.services .image-fourth');
+    const imgContainer1 = document.querySelector('.about-services .image-first');
+    const imgContainer2 = document.querySelector('.about-services .image-second');
+    const imgContainer3 = document.querySelector('.about-services .image-thirth');
+    const imgContainer4 = document.querySelector('.about-services .image-fourth');
     const img2Idx = currentIdx + 1 > carouselImages.length - 1 ? 0 : currentIdx + 1;      
     const img3Idx = img2Idx + 1 > carouselImages.length - 1 ? 0 : img2Idx + 1;
     const img4Idx = img3Idx + 1 > carouselImages.length - 1 ? 0 : img3Idx + 1;      
