@@ -278,25 +278,24 @@ p {
 }
 }
 
-.carousel-discription-of-services .prev, .next {
+ .prev,.next{
     background-image: url(../images/navigation.svg);
     background-repeat: no-repeat;
     justify-items: left;
+    width: 20px;
+    height: 30px;
 }
 
 .prev {
     transform: scaleX(-1);
-    justify-items: left;
+    justify-items: l
 }
 
 .next {
-    right: 0;
     justify-items: right;
 }
 
-.prev, .next:hover {
-    cursor: pointer;
-}
+
 
 .services {
     display: flex;
