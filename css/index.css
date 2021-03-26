@@ -276,25 +276,30 @@ p {
     overflow: hidden;
     height: 600px;
 }
+
+.carousel-discription-of-services{
+    display: grid;
+    grid-template-columns: 1fr 20fr 1fr;
+    background-color: #FFFFFF;
+
 }
 
- .prev,.next{
-    background-image: url(../images/navigation.svg);
-    background-repeat: no-repeat;
-    justify-items: left;
-    width: 20px;
-    height: 30px;
-}
+.prev, .next{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    
+    background-color: #FFFFFF;
+    font-size:40px;
+      
+    color: var(--main-color);
+    border: none;
 
-.prev {
-    transform: scaleX(-1);
-    justify-items: l
 }
-
-.next {
-    justify-items: right;
+.prev, .next :hover{
+    cursor:pointer;
 }
-
 
 
 .services {
