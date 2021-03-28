@@ -13,16 +13,18 @@
     padding: 0;
 }
 body {
-     margin: auto;
+     margin: 
 }
 .conteiner-first{
-    padding: 10px 15px;
+    padding: 30px 15px;
     max-width: 980px;
     margin: 0px auto;
     height: 800px;
 }
-.logo {
+.logo img {
     display: flex;
+    width: 150px;
+    padding-top: 25px;
  
 }
 
@@ -73,7 +75,7 @@ header .menu a, .footer-menu a {
 
     header .menu, .footer-menu {
         padding-left: 50px ;
-        margin: 40px 10px 50px 130px;
+        margin: 45px 10px 50px 130px;
         display: flex;
         justify-content: space-around;
         flex: 1;
@@ -86,9 +88,9 @@ header .menu a, .footer-menu a {
 
 
 header {
-    background-image: url(../images/main-cover.png);
+    background-image: url(../images/main-cover.jpg);
     background-size: cover;
-    min-height: 600px;
+    min-height: 700px;
    
 }
 
@@ -106,8 +108,8 @@ h1 {
     text-transform: uppercase;
     color: var(--main-color);
     font-weight: bold;
-    font-size: 50px;
-    margin: 80px 20px 20px 40px;
+    font-size: 80px;
+    padding: 40px 50px 30px 30px;
     justify-content: left;
     text-align: left;
 }
@@ -143,22 +145,17 @@ h1 {
     cursor: pointer;
     text-decoration: underline;
 }
-.container-second, .container-thirst{
+.container-second, .container-thirst, .container-forth{
     padding: 10px 15px;
     max-width: 980px;
     margin: 0px auto;
   
 }
-
-.intro {
-    padding: 10px;
+.intro-numbers,.intro-discription{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;    
-
-    border: none;
-    justify-items: center;
 }
+
 
 .intro-item-title {
     
@@ -192,7 +189,7 @@ grid-template-rows: 1fr 1fr;
     }
 
 h2 {
-    padding: 40px;
+    padding: 20px;
     font-size: 50px;
     justify-content: center;
     display: flex;
@@ -201,7 +198,7 @@ h2 {
 }
 
 p {
-    padding: 5px 10px 20px 0px;
+    padding: 5px 10px 10px 0px;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -248,7 +245,7 @@ p {
 .team-intro h2, .offered-services h2, .video h2 {
     color: var(--article-color);
     font-size: 40px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .our-instructors h3, .services h3 {
@@ -391,9 +388,9 @@ p {
 }
 
 .fifth-block {
-    background-image: url(../images/background-reguest-form.png);
+    background-image: url(../images/background-reguest-form.jpg);
     background-size: cover;
-    min-height: 400px;
+    
 }
 
 .font-request-form img {
@@ -403,12 +400,14 @@ p {
     font-size: 100%;
 }
 
-.fifth-block {
+.fifth-block-content {
     display: grid;
     grid-template-columns: repeat(2,1Fr);
     padding: 10px 10px 30px 10px;
     grid-gap: 30px;
 }
+
+
 
 .request-form h2 {
     font-size: 60px;
@@ -440,19 +439,26 @@ p {
 .video, .contacts-resourses {
     background-image: url(../images/video-background.png);
     background-size: cover;
-    min-height: 400px;
+    
     padding: 10px 20px 10px 20px;
 }
+.video-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 10px;
+    
+}
 
-.contacts-resourses {
+.contacts-resourses-content {
     display: grid;
     grid-template-columns: repeat(2,3Fr 2fr);
     grid-gap: 50px;
 }
 
-#map iframe {
-    height: 700px;
-    width: 600px;
+.map iframe {
+    padding-top: 25px;
+    height: auto;
+    width: auto;
 }
 
 .contacts p {
@@ -466,7 +472,6 @@ p {
     color: var(--article-color);
     font-size: 50px;
 }
-vvv
 .contacts {
     background-color: #FFFFFF;
     justify-content: center;
@@ -479,7 +484,8 @@ vvv
 .contacts {
     align-items: center;
     justify-items: center;
-    padd }
+    
+ }
 
 .footer-navigation p {
     color: var(--article-color);
@@ -487,14 +493,133 @@ vvv
 }
 
 .video iframe {
+    
+    width: 100%;
+    height: 100%;
+    
+}
+.video-content{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
-    margin: 20px 100px 20px 100px;
-    display: flex;
-    height: 300px;
-    width: 600px
 }
 
 .footer-navigation {
-    height: 30px;
-    padding: 5px 50px 5px 50px;
+    height: 10px;
+    padding: 10px 50px 5px 50px;
+}
+@media screen and (min-width: 320px) and (max-width: 640px) {
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    p{
+        font-size: 15pz;
+    }
+    
+.intro-numbers,.intro-discription{
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+.intro{
+    padding: 5px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.intro-discription p{
+    padding-top: 25px;
+    
+    font-size: 20px;
+}
+.intro-numbers p{
+    font-size: 40px;
+}
+
+
+
+    .second-block p{
+        display: flex;
+            }
+    .what-we-do{
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 10px 40px;
+        justify-content: center;
+    }
+    .our-instructors{
+        display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    
+    }
+    #list-of-services {
+    justify-content: space-around;
+    width: 100%;
+    display: grid;
+    grid-template-columns:none;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    font-size: 100px;
+    }
+    .fifth-block{
+        max-height: 900px;
+    }
+  
+    .fifth-block-content {
+    display: grid;
+    grid-template-columns:none;
+    grid-template-rows: 1fr 5fr;
+    padding: 10px 10px 30px 10px;
+    
+}
+.font-request-form img {
+    display: flex;
+    width: 300px;
+    height: 350px;
+    justify-content: right;
+    padding: 50px 20px 50px 20px;
+    font-size: 100%;
+}
+.request-form h2 {
+    padding: 0px;
+    font-size: 50px;
+    font-weight: bold;
+}
+   form{
+       color: var(--main-color);
+       font-weight: bold;
+   }
+   .video-list{
+    display: grid;
+    grid-template-columns:none;
+    grid-template-rows: 1fr 1fr:
+    grid-gap: 10px;
+    
+}
+.contacts-resourses-content {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr ;
+    grid-gap: 20px;
+    align-items: center;
+    margin:10px 10px
+}
+.contacts{
+    margin: 5px 5px;
+    
+btn-warning  {
+    padding-left: 100px;
+}
+
+
+    
+    
+
 }
