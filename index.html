@@ -170,8 +170,23 @@
                 <div class="about-services">
                         <img class="image-first" src="images/slider-fre-fly.jpg" alt="FreeFly">
                         <img class="image-second" src="images/slider-kitesurfing.jpg" alt="Kitesurfing">
+                        <!--
                         <img class="image-thirth" src="images/slider-paragliding.jpg" alt="Paragl">
                         <img class="image-fourth" src="images/slider-wingsuit.jpg" alt="Wingsuit">
+                        -->
+                    </div>
+                    <button class="next">></button>
+            </div>
+            <div class="carousel-discription-of-services-small">
+                <button class="prev">
+                    <</button>
+                <div class="about-services-small">
+                        <img class="image-first" src="images/slider-fre-fly.jpg" alt="FreeFly">
+                        
+                        <!--
+                        <img class="image-thirth" src="images/slider-paragliding.jpg" alt="Paragl">
+                        <img class="image-fourth" src="images/slider-wingsuit.jpg" alt="Wingsuit">
+                        -->
                     </div>
                     <button class="next">></button>
             </div>
@@ -240,41 +255,20 @@
                         <div class="request-form">
                             <h2 id="ordering">Enjoy flight</h2>
                             <p>Get your personal 20% discount!</p>
-                            <!--
-                    <form method="Post" action="https://formspree.io/f/xbjpvekp">
-                        <label>
-                            <input name="User" type="text" placeholder="Name*" required>
-                        </label>
-                        <br>
-                        <label>
-                            <input name="Phone" type="number" placeholder="Phone number*" required>
-                        </label>
-                        <br>
-                        <label>
-                            <input name="Email" type="email" placeholder="Email*" required>
-                        </label>
-                        <br>
-                        <label>
-                            <input name="Date" type="text" placeholder="Choose date">
-                        </label>
-                        <br>
-                        <input type="submit">
-                    </form>
-                -->
-                            <form method="Post" action="https://formspree.io/f/xbjpvekp">
+                                               <form method="Post" action="https://formspree.io/f/xbjpvekp">
                                 <div class="mb-3">
                                     <label class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                    <input type="email" class="form-control" aria-describedby="emailHelp" required name="email-address">
+                                    <div class="form-text">We'll never share your email with anyone else.</div>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Your name</label>
-                                    <input type="user" class="form-control" required>
+                                    <input type="user" class="form-control" required name="your-name">
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Your phone number</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" required>
-                                    <div id="emailHelp" class="form-text"></div>
+                                    <input type="Phone" class="form-control"  required name="your-phone">
+                                    <div  class="form-text"></div>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
