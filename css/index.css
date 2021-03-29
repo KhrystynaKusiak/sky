@@ -8,24 +8,27 @@
     --article-color: rgba(128, 128, 128, 0.932);
     scroll-behavior: smooth;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
-     margin: 
+    margin:
 }
-.conteiner-first{
+
+.conteiner-first {
     padding: 30px 15px;
     max-width: 980px;
     margin: 0px auto;
     height: 800px;
 }
+
 .logo img {
     display: flex;
     width: 150px;
     padding-top: 25px;
- 
 }
 
 .burger-icon {
@@ -83,15 +86,12 @@ header .menu a, .footer-menu a {
         flex-direction: row;
         list-style-type: none;
     }
-    
 }
-
 
 header {
     background-image: url(../images/main-cover.jpg);
     background-size: cover;
     min-height: 700px;
-   
 }
 
 .time {
@@ -145,20 +145,19 @@ h1 {
     cursor: pointer;
     text-decoration: underline;
 }
-.container{
+
+.container {
     padding: 10px 15px;
     max-width: 980px;
     margin: 0px auto;
-  
 }
-.intro-numbers,.intro-discription{
+
+.intro-numbers,.intro-discription {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-
 .intro-item-title {
-    
     display: flex;
     font-size: 60px;
     font-weight: bold;
@@ -169,13 +168,11 @@ h1 {
     padding: 20px;
     justify-content: center;
     display: flex;
- 
     color: var(--accent-color);
 }
 
 .intro-text {
     display: flex;
-    
     font-weight: bold;
     color: var(--article-color);
 }
@@ -184,9 +181,8 @@ h1 {
     background-image: url(../images/background-block.png);
     background-size: cover;
     padding: 10px 15px;
-   
     margin: 0px auto;
-    }
+}
 
 h2 {
     padding: 20px;
@@ -236,12 +232,12 @@ p {
 }
 
 /*end class second block*/
-.our-instructors, .offered-services,.carousel-discription-of-services{
+.our-instructors, .offered-services,.carousel-discription-of-services {
     padding: 10px 15px;
     max-width: 980px;
     margin: 0px auto;
-
 }
+
 .team-intro h2, .offered-services h2, .video h2 {
     color: var(--article-color);
     font-size: 40px;
@@ -300,30 +296,26 @@ p {
     height: 600px;
 }
 
-.carousel-discription-of-services{
+.carousel-discription-of-services {
     display: grid;
     grid-template-columns: 1fr 20fr 1fr;
     background-color: #FFFFFF;
-
 }
 
-.prev, .next{
+.prev, .next {
     display: flex;
     justify-content: center;
     font-weight: bold;
     align-items: center;
-    
     background-color: #FFFFFF;
-    font-size:40px;
-      
+    font-size: 40px;
     color: var(--main-color);
     border: none;
-
-}
-.prev, .next :hover{
-    cursor:pointer;
 }
 
+.prev, .next :hover {
+    cursor: pointer;
+}
 
 .services {
     display: flex;
@@ -353,7 +345,6 @@ p {
     justify-content: center;
     font-size: 15px;
     padding: 0px;
-    
 }
 
 #list-of-services .price {
@@ -390,7 +381,6 @@ p {
 .fifth-block {
     background-image: url(../images/background-reguest-form.jpg);
     background-size: cover;
-    
 }
 
 .font-request-form img {
@@ -407,8 +397,6 @@ p {
     grid-gap: 30px;
 }
 
-
-
 .request-form h2 {
     font-size: 60px;
     font-weight: bold;
@@ -416,12 +404,10 @@ p {
 
 .btn-primary,.form-control {
     margin: 0px;
-   
     display: flex;
     text-align: center;
     text-decoration: none;
     width: 100%;
-   
 }
 
 .btn-primary {
@@ -440,16 +426,16 @@ p {
 .video, .contacts-resourses {
     background-image: url(../images/video-background.png);
     background-size: cover;
-    
     padding: 10px 20px 10px 20px;
 }
-.video-list{
+
+.video-list {
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-gap: 10px;
-    
 }
-.video-list iframe{
+
+.video-list iframe {
     min-height: 400px;
 }
 
@@ -461,7 +447,7 @@ p {
 
 .map iframe {
     padding-top: 5px;
-    height:500px;
+    height: 500px;
     width: 600px;
 }
 
@@ -476,6 +462,7 @@ p {
     color: var(--article-color);
     font-size: 50px;
 }
+
 .contacts {
     background-color: #FFFFFF;
     justify-content: center;
@@ -483,10 +470,7 @@ p {
     justify-items: center;
     margin: 60px 20px 100px 20px;
     padding: 10px 10px;
-    }
-
-
-
+}
 
 .footer-navigation p {
     color: var(--article-color);
@@ -494,12 +478,11 @@ p {
 }
 
 .video iframe {
-    
     width: 100%;
     height: 100%;
-    
 }
-.video-content{
+
+.video-content {
     display: grid;
     grid-template-rows: 1fr 1fr;
     align-items: center;
@@ -509,126 +492,129 @@ p {
     height: 10px;
     padding: 10px 50px 5px 50px;
 }
+
 @media screen and (min-width: 320px) and (max-width: 840px) {
-    h1{
+    h1 {
         font-size: 50px;
     }
-    h2{
+
+    h2 {
         font-size: 25px;
     }
-    p{
+
+    p {
         font-size: 15pz;
     }
-    
-.intro-numbers,.intro-discription{
-    display: grid;
-    grid-template-columns: none;
-    grid-template-rows: 1fr 1fr 1fr;
 
-}
-.intro{
-    padding: 5px 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
+    .intro-numbers,.intro-discription {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
 
-.intro-text p{
-    padding: 5px 20px;
-    
-    font-size: 20px;
-    margin-bottom: 0px;
-}
-.intro-item-title p{
-    padding: 5px 20px;
-    font-size: 30px;
-    margin: 0px;
-}
+    .intro {
+        padding: 5px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
 
+    .intro-text p {
+        padding: 5px 20px;
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
 
+    .intro-item-title p {
+        padding: 5px 20px;
+        font-size: 30px;
+        margin: 0px;
+    }
 
-    .second-block p{
+    .second-block p {
         display: flex;
-            }
-    .what-we-do{
+    }
+
+    .what-we-do {
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr 1fr 1fr;
         padding: 10px 5px;
         justify-content: center;
     }
-    .our-instructors{
+
+    .our-instructors {
         display: grid;
-    grid-template-columns: none;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    justify-content: center;
-    
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        justify-content: center;
     }
+
     #list-of-services {
-    justify-content: space-around;
-    width: 100%;
-    display: grid;
-    grid-template-columns:none;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    font-size: 100px;
+        justify-content: space-around;
+        width: 100%;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        font-size: 100px;
     }
-    .fifth-block{
+
+    .fifth-block {
         max-height: 900px;
     }
-  
+
     .fifth-block-content {
-    display: grid;
-    grid-template-columns:none;
-    grid-template-rows: 1fr 5fr;
-    padding: 10px 10px 30px 10px;
-    
-}
-.font-request-form img {
-    display: flex;
-    width: 300px;
-    height: 350px;
-    justify-content: right;
-    padding: 50px 20px 50px 20px;
-    font-size: 100%;
-}
-.request-form h2 {
-    padding: 0px;
-    font-size: 50px;
-    font-weight: bold;
-}
-   form{
-       color: var(--main-color);
-       font-weight: bold;
-   }
-   .video-list{
-    display: grid;
-    grid-template-columns:none;
-    grid-template-rows: 1fr 1fr:
-    grid-gap: 10px;
-    
-}
-.contacts-resourses-content {
-    display: grid;
-    grid-template-columns: none;
-    grid-template-rows: 1fr 1fr ;
-    grid-gap: 5px;
-    align-items: center;
-    margin:10px 10px
-}
-.map iframe{
-    padding-top: 5px;
-    min-height: 400px;
-    height:10%;
-    width: 100%;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 5fr;
+        padding: 10px 10px 30px 10px;
+    }
 
-}
-.contacts{
-    margin: 5px 5px;
-}
-    
+    .font-request-form img {
+        display: flex;
+        width: 300px;
+        height: 350px;
+        justify-content: right;
+        padding: 50px 20px 50px 20px;
+        font-size: 100%;
+    }
 
+    .request-form h2 {
+        padding: 0px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    form {
+        color: var(--main-color);
+        font-weight: bold;
+    }
+
+    .video-list {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr: grid-gap: 10px;
+    }
+
+    .contacts-resourses-content {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr ;
+        grid-gap: 5px;
+        align-items: center;
+        margin: 10px 10px
+    }
+
+    .map iframe {
+        padding-top: 5px;
+        min-height: 400px;
+        height: 10%;
+        width: 100%;
+    }
+
+    .contacts {
+        margin: 5px 5px;
+    }
 }
-
-
 
