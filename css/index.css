@@ -86,7 +86,7 @@ header .menu a, .footer-menu a {
 header {
     background-image: url(../images/main-cover.jpg);
     background-size: cover;
-    min-height: 950px;
+    min-height: 980px;
    
 }
 
