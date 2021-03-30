@@ -86,7 +86,8 @@ header .menu a, .footer-menu a {
 header {
     background-image: url(../images/main-cover.jpg);
     background-size: cover;
-    min-height: 850px;
+    min-height: 900px;
+    display: flex;
 }
 
 .time {
