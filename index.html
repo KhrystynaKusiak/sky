@@ -52,6 +52,7 @@
             
             
                 
+                    
                     </p>
                 </div>
                 <div class="button-book">
@@ -111,7 +112,7 @@
             </div>
             <div class="our-instructors">
                 <article>
-                    <img id="instructors" src="images/aliciasilverstone.jpg" alt="Alicia Silvestone" width="300" height="400">
+                    <img class="instructors" src="images/aliciasilverstone.jpg" alt="Alicia Silvestone" width="300" height="400">
                     <h3>Alicia Silvestone</h3>
                     <p>Skydiving Instructor | 5 years of experience</p>
                     <div class="social-media-contact-instuctors">
@@ -127,7 +128,7 @@
                     </div>
                 </article>
                 <article>
-                    <img id="instructors" src="images/lucasmerstein.jpg" alt="Lucas Werstein" width="300" height="400">
+                    <img class="instructors" src="images/lucasmerstein.jpg" alt="Lucas Werstein" width="300" height="400">
                     <h3>Lucas Werstein</h3>
                     <p>Skydiving Instructor | 5 years of experience</p>
                     <div class="social-media-contact-instuctors">
@@ -143,7 +144,7 @@
                     </div>
                 </article>
                 <article>
-                    <img id="instructors" src="images/davidmaisner.jpg" alt="David Maisner" width="300" height="400">
+                    <img class="instructors" src="images/davidmaisner.jpg" alt="David Maisner" width="300" height="400">
                     <h3>David Maisner</h3>
                     <p>Kitesurfing Instructor| 4 years of experience</p>
                     <div class="social-media-contact-instuctors">
@@ -165,30 +166,23 @@
                 gliders to double skydiving.</p>
             </div>
             <div class="carousel-discription-of-services">
-                <button class="prev">
-                    <</button>
+                <button class="prev">&lt;</button>
                 <div class="about-services">
-                        <img class="image-first" src="images/slider-fre-fly.jpg" alt="FreeFly">
-                        <img class="image-second" src="images/slider-kitesurfing.jpg" alt="Kitesurfing">
-                        <!--
+                    <img class="image-first" src="images/slider-fre-fly.jpg" alt="FreeFly">
+                    <img class="image-second" src="images/slider-kitesurfing.jpg" alt="Kitesurfing">
+                    <!--
                         <img class="image-thirth" src="images/slider-paragliding.jpg" alt="Paragl">
                         <img class="image-fourth" src="images/slider-wingsuit.jpg" alt="Wingsuit">
                         -->
-                    </div>
-                    <button class="next">></button>
+                </div>
+                <button class="next">&gt;</button>
             </div>
             <div class="carousel-discription-of-services-small">
-                <button class="prev">
-                    <</button>
+                <button class="prev">&lt;</button>
                 <div class="about-services-small">
-                        <img class="image-first" src="images/slider-fre-fly.jpg" alt="FreeFly">
-                        
-                        <!--
-                        <img class="image-thirth" src="images/slider-paragliding.jpg" alt="Paragl">
-                        <img class="image-fourth" src="images/slider-wingsuit.jpg" alt="Wingsuit">
-                        -->
-                    </div>
-                    <button class="next">></button>
+                    <img class="image-first" src="images/slider-fre-fly.jpg" alt="FreeFly">
+                </div>
+                <button class="next">&gt;</button>
             </div>
             <div class="fourth-block">
                 <div class="container">
@@ -255,20 +249,20 @@
                         <div class="request-form">
                             <h2 id="ordering">Enjoy flight</h2>
                             <p>Get your personal 20% discount!</p>
-                                               <form method="Post" action="https://formspree.io/f/xbjpvekp">
+                            <form method="Post" action="https://formspree.io/f/xbjpvekp">
                                 <div class="mb-3">
                                     <label class="form-label">Email address</label>
-                                    <input type="email" class="form-control" aria-describedby="emailHelp" required name="email-address">
+                                    <input type="email" class="form-control" required name="email-address">
                                     <div class="form-text">We'll never share your email with anyone else.</div>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Your name</label>
-                                    <input type="user" class="form-control" required name="your-name">
+                                    <input type="text" class="form-control" required name="your-name">
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Your phone number</label>
-                                    <input type="Phone" class="form-control"  required name="your-phone">
-                                    <div  class="form-text"></div>
+                                    <input type="tel" class="form-control" required name="your-phone">
+                                    <div class="form-text"></div>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
@@ -282,10 +276,10 @@
                     <p>Seeing once is better than reading twice! Watch these amazing videos shot by our clients!</p>
                     <div class="video-list">
                         <div>
-                            <iframe width="560" heigth="415" src="https://www.youtube.com/embed/ft5aY1I22j4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/ft5aY1I22j4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div>
-                            <iframe width="560" heigth="315" src="https://www.youtube.com/embed/yl8hiSHuhiI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/yl8hiSHuhiI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -306,29 +300,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="footer-navigation">
-                        <nav>
-                            <div class="logo">
-                                <img src="images/footer-logo.svg" alt="Logo">
-                            </div>
-                            <ul class="footer-menu">
-                                <li>
-                                    <a href="#aboutus">About us</a>
-                                </li>
-                                <li>
-                                    <a href="#services">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#pricing">Pricing</a>
-                                </li>
-                                <li>
-                                    <a href="#contact">Contact us</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+            </div>
+            <div class="container">
+                <div class="footer-navigation">
+                    <nav>
+                        <div class="logo">
+                            <img src="images/footer-logo.svg" alt="Logo">
+                        </div>
+                        <ul class="footer-menu">
+                            <li>
+                                <a href="#aboutus">About us</a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#pricing">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact us</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
+            </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <script src="js/index.js"></script>

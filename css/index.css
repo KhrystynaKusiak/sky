@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Noto+Sans&display=swap'); * {
-}
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Noto+Sans&display=swap'); 
 
 :root {
     font-family: 'Hind', sans-serif;
@@ -12,10 +11,6 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    margin:
 }
 
 .conteiner-first {
@@ -91,7 +86,7 @@ header .menu a, .footer-menu a {
 header {
     background-image: url(../images/main-cover.jpg);
     background-size: cover;
-    min-height: 700px;
+    height: 90%;
 }
 
 .time {
@@ -292,16 +287,16 @@ p {
     display: flex;
     justify-content: space-around;
     background-color: #FFFFFF;
-    
     height: 600px;
 }
 
-.carousel-discription-of-services  {
+.carousel-discription-of-services {
     display: grid;
     grid-template-columns: 1fr 20fr 1fr;
     background-color: #FFFFFF;
 }
-.carousel-discription-of-services-small{
+
+.carousel-discription-of-services-small {
     display: none;
 }
 
@@ -326,7 +321,6 @@ p {
     background-color: #FFFFFF;
     margin: 20px 30px 20px 30px;
     padding: 20px 20px;
-    ; }
 }
 
 .services img {
@@ -505,10 +499,6 @@ p {
         font-size: 25px;
     }
 
-    p {
-        font-size: 15pz;
-    }
-
     .intro-numbers,.intro-discription {
         display: grid;
         grid-template-columns: none;
@@ -597,7 +587,8 @@ p {
     .video-list {
         display: grid;
         grid-template-columns: none;
-        grid-template-rows: 1fr 1fr: grid-gap: 10px;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
     }
 
     .contacts-resourses-content {
@@ -620,22 +611,18 @@ p {
         margin: 5px 5px;
     }
 
-    .carousel-discription-of-services  {
-    display: none;
-    
-}
-.carousel-discription-of-services-small{
-    display: grid;
-    grid-template-columns: 1fr 15fr 1fr;
-    background-color: #FFFFFF;
-   
-    
+    .carousel-discription-of-services {
+        display: none;
+    }
 
-}
+    .carousel-discription-of-services-small {
+        display: grid;
+        grid-template-columns: 1fr 15fr 1fr;
+        background-color: #FFFFFF;
+    }
 
-.about-services-small img{
-    width: 100%;
-    height: 100%;
+    .about-services-small img {
+        width: 100%;
+        height: 100%;
+    }
 }
-}
-

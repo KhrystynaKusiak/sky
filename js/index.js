@@ -11,12 +11,12 @@ let currentIdx = 0;
 function showCurrentImage() {
     const imgContainer1 = document.querySelector('.about-services .image-first');
     const imgContainer2 = document.querySelector('.about-services .image-second');
-   
+
     const img2Idx = currentIdx + 1 > carouselImages.length - 1 ? 0 : currentIdx + 1;
-    
+
     imgContainer1.src = carouselImages[currentIdx];
     imgContainer2.src = carouselImages[img2Idx];
-   
+
 }
 
 function next() {
@@ -41,19 +41,17 @@ document.querySelector('.carousel-discription-of-services .next').addEventListen
 
 document.querySelector('.carousel-discription-of-services .prev').addEventListener('click', prev);
 
-
 const carouselImagesSmall = ['images/slider-fre-fly.jpg', 'images/slider-kitesurfing.jpg', 'images/slider-paragliding.jpg', 'images/slider-wingsuit.jpg', ]
 
 let currentSmallIdx = 0;
 
 function showCurrentImageSmall() {
     const imgSmallContainer1 = document.querySelector('.about-services-small .image-first');
-    
+
     const imgSmall2Idx = currentSmallIdx + 1 > carouselImagesSmall.length - 1 ? 0 : currentSmallIdx + 1;
-    
+
     imgSmallContainer1.src = carouselImagesSmall[currentIdx];
-    
-   
+
 }
 
 function nextSmall() {
@@ -77,5 +75,3 @@ setInterval(nextSmall, 2000);
 document.querySelector('.carousel-discription-of-services-small .next').addEventListener('click', nextSmall);
 
 document.querySelector('.carousel-discription-of-services-small .prev').addEventListener('click', prevSmall);
-
-
